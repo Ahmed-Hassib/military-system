@@ -1,0 +1,244 @@
+/* import Acme font */
+@import url("../fonts/Acme.css");
+@import url("../fonts/noto-sans-arabic.css");
+@import url("../fonts/Scheherazade.css");
+@import url("../fonts/noto-naskh-arabic.css");
+
+/************/
+/* variables */
+:root {
+	--dark-primary-color: #03045e;
+	--primary-color: #0077b6;
+	--secondary-color: #457b9d;
+	--baby-blue-color: #a8dadc;
+	--light-color: #f1faee;
+	--white-color: #ffffff;
+	--red-color: #e63946;
+}
+
+/************/
+/* for all elements */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	/* color: var(--dark-primary-color) */
+}
+
+/************/
+/* html, body */
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: "Noto Naskh Arabic", "Acme", serif;
+	/* font-family: "Acme",  sans-serif; */
+	background-color: #f4f4f4;
+	overflow-x: hidden;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+/************/
+.navbar {
+	background-color: var(--primary-color);
+}
+
+.navbar a.nav-link {
+	color: var(--white-color);
+}
+
+.navbar-brand img {
+	width: 30px;
+	height: 30px;
+}
+/************/
+body > .container {
+	margin-bottom: 3rem;
+}
+
+.content {
+	min-height: 100vh;
+}
+/************/
+.loginPageContainer {
+	padding: 1rem 0.5rem;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #457b9d;
+}
+
+.contentBox {
+	padding: 2rem 1.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	min-height: 350px;
+	background-color: var(--white-color);
+	border-radius: 16px;
+	box-shadow: 4px 4px 8px #000;
+}
+
+.contentBox > .formBox {
+	position: relative;
+	width: 100%;
+}
+
+.contentBox .formBox .formBoxAvatar {
+	position: absolute;
+	top: -40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contentBox .formBox .formBoxAvatar .bi {
+	font-size: 150px;
+}
+
+.contentBox .formBox .formBoxAvatar img {
+	width: 150px;
+}
+
+.contentBox .formBox .formBoxAvatar .bi-person-circle::before {
+	background: #457b9d;
+	padding: 0.5rem;
+	border-radius: 50%;
+	color: var(--white-color);
+}
+
+.contentBox .formBox .login-form {
+	position: relative;
+	margin-top: 50px;
+}
+
+.contentBox .formBox .login-form button[type="submit"] {
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+
+
+.contentBox .formBox .login-form .show-pass {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(-50%, 20%);
+	cursor: pointer;
+}
+
+.astrisk {
+	position: absolute;
+	top: 10%;
+	left: 10px;
+}
+
+.btn-close-alert {
+	position: absolute;
+	left: 5%;
+}
+/***********/
+header.header {
+	padding: 1rem 0.5rem;
+	margin: 1rem 0;
+	text-align: right;
+}
+
+header.header > h2 {
+	font-weight: 700;
+}
+
+header.header hr:not([size]) {
+	margin: 0.5rem 0;
+	height: 5px;
+	width: 150px;
+	color: var(--dark-primary-color);
+	opacity: 1;
+}
+/***********/
+.modal-header .btn-close {
+	margin: 0;
+}
+
+.form-select {
+	background-position: left 0.75rem center;
+}
+
+/***********/
+table tr {
+	vertical-align: middle;
+}
+
+table thead {
+	background: var(--primary-color);
+	color: var(--white-color);
+}
+
+/***********/
+.soldier-img {
+	margin: auto;
+	border: 1px solid #000;
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 4px 4px 8px #000;
+	overflow: hidden;
+}
+
+.img-container {
+	position: absolute;
+	bottom: 0;
+	right: 35%;
+	background: #0077b6;
+	width: 50px;
+	height: 50px;
+	line-height: 55px;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.img-container .bi-camera {
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.img-container input[type="file"] {
+	position: absolute;
+	transform: scale(2);
+	opacity: 0;
+}
+
+.section-header {
+	margin-bottom: 2rem;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+/***********/
+footer.footer {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+footer.footer p {
+	color: var(--secondary-color);
+}

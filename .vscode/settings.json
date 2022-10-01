@@ -1,0 +1,14 @@
+{
+	"editor.formatOnPaste": true,
+	"php-cs-fixer.allowRisky": true,
+	"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+	"[php]": {
+		"editor.defaultFormatter": "Sophisticode.php-formatter"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	}
+}
